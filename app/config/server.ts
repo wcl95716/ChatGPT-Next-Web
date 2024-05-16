@@ -107,10 +107,10 @@ export const getServerSideConfig = () => {
     apiKey: getApiKey(process.env.OPENAI_API_KEY),
     openaiOrgId: process.env.OPENAI_ORG_ID,
 
-    isAzure,
-    azureUrl: process.env.AZURE_URL,
-    azureApiKey: getApiKey(process.env.AZURE_API_KEY),
-    azureApiVersion: process.env.AZURE_API_VERSION,
+    isAzure: true,
+    azureUrl: "https://chenglongwen.openai.azure.com/openai/deployments/test1", //process.env.AZURE_URL,
+    azureApiKey: "62f432e462164233993b473d45854844", //getApiKey(process.env.AZURE_API_KEY),
+    azureApiVersion: "2024-02-15-preview", //process.env.AZURE_API_VERSION,
 
     isGoogle,
     googleApiKey: getApiKey(process.env.GOOGLE_API_KEY),
